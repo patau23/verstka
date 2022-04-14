@@ -1,0 +1,189 @@
+/* 
+TODO: 
+1) кнопка переключения языка не работает
+2) меню скорее всего должно быть закреплено 
+3) меню не работает 
+4) рейтинг(звездочки) у иконок программ сделаны как картинки
+5) кнопка и ссылки на соцсети не работают
+6) структура Html гавно 
+*/
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url(../fonts/Gilroy-Medium.woff);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gilroy-Medium", sans-serif;
+  font-size: 20px;
+}
+
+header {
+  margin: 0 18%;
+  padding-bottom: 100px;
+}
+
+.menu {
+  padding: 45px 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #999;
+}
+
+.menu li {
+  display: inline-block;
+  width: auto;
+  list-style-type: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #828282;
+}
+
+.bold {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.letter {
+  padding: 0px;
+  margin: 45px 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.letter li {
+  margin: 0;
+  padding: 0;
+}
+
+.letter.left {
+  font-size: 60px;
+  margin: 0px;
+}
+
+.letter.center {
+  display: flex;
+  align-items: flex-end;
+  margin: 0px;
+}
+
+.letter.right {
+  transform: rotate(270deg);
+  text-align: right;
+}
+.letter.right a {
+  color: #828282;
+  text-decoration: none;
+}
+
+header img {
+  width: 100%;
+}
+
+/* about-me block */
+.about-me {
+  background-color: #f6f6f6;
+  padding: 120px 0px;
+}
+
+.about-me h2,
+p {
+  text-align: center;
+}
+
+/* skills block */
+.skills {
+  padding: 120px 0px;
+}
+
+.skills h2,
+p {
+  text-align: center;
+}
+
+.skills p {
+  margin: 69px 0px 83px 0px;
+}
+
+.card-group {
+  display: flex;
+  margin: 0 18%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card {
+  text-align: center;
+}
+
+.card-body {
+  text-align: center;
+}
+
+/* Portfolio block */
+.portfolio {
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 120px 0px;
+}
+
+.portfolio-group {
+  margin: 0 20%;
+}
+
+.card-body a {
+  color: rgb(0, 0, 0);
+}
+
+.example {
+  padding: 60px 0px;
+}
+
+.example img {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+/* contacts block */
+.contacts {
+  text-align: center;
+  margin: 0 18%;
+  padding: 80px 0px;
+}
+
+.media-button {
+  font-family: "Gilroy-Medium";
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-color: black;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.social-media {
+  padding-top: 50px;
+  display: flex;
+  margin: 0 30%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.network-icon {
+  display: inline;
+}
+
+.contacts span {
+  color: #828282;
+  font-size: 16px;
+}

@@ -1,0 +1,168 @@
+$green: #007765;
+$black: #000000;
+$gray: #eeeeee;
+$black-lg: #333333;
+
+/* убираем scrollbar */
+/* chrome based */
+::-webkit-scrollbar {
+  width: 0px; /* ширина scrollbar'a */
+  background: transparent; /* опционально */
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* WRAPPERS */
+.wrapper {
+  width: 862px;
+  margin: 0 auto;
+}
+
+.page {
+  &-green {
+    background-color: $green;
+  }
+  &-gray {
+    background-color: $gray;
+  }
+  &-jumbotron {
+    background-image: url(../img/Jumbotron.png);
+    background-size: contain;
+  }
+  &-hero {
+    background-image: url(../img/Hero.png);
+    background-size: contain;
+  }
+  &-black-light {
+    background-color: $black-lg;
+  }
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  height: 65px;
+  justify-content: space-between;
+  align-items: center;
+  &-logo {
+    width: 140px;
+    margin-left: 46px;
+  }
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+  &-item {
+    margin-right: 7.7px;
+  }
+  &-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center; /*Центрирование по вертикали */
+  text-align: center;
+  &-title {
+    margin: 122px 0px;
+    color: white;
+    font-size: 55px;
+    font-weight: 500;
+  }
+  &-description {
+    margin: 98.5px 0px 101px 0px;
+    line-height: 1.19;
+    word-spacing: 1.5px;
+    color: white;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 500;
+  }
+  &-footer {
+    margin: 30px 0px;
+    width: 400px;
+    line-height: 1.19;
+    word-spacing: 2px;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+/* PROBLEM */
+.content {
+  //   height: 511.5px;
+  word-spacing: 0.1px;
+  padding: 36.5px 0px 42px 0px;
+  &-title {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    color: $green;
+    font-size: 49.1px;
+    font-weight: 500;
+  }
+  &-description {
+    margin-top: 14px;
+    margin-left: 7.5px;
+    margin-bottom: 28px;
+    line-height: 1.2;
+    font-size: 24.4px;
+    font-weight: 400;
+    &-ital {
+      font-style: italic;
+    }
+    &-bold {
+      font-weight: 700;
+    }
+  }
+  &-image {
+    float: left;
+    width: 88px;
+    margin-top: 13px;
+    margin-left: 7px;
+    margin-right: 37px;
+  }
+}
+
+/* GRID CARDS */
+.credit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+  &-card {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    padding: 0px;
+    word-spacing: 1px;
+    &-photo {
+      margin-left: auto;
+      margin-right: auto;
+      width: 130px;
+    }
+    &-title {
+      margin: 7px 0px 0px 0px;
+      padding: 0px;
+      color: $green;
+      font-size: 18px;
+    }
+    &-description {
+      margin: 0px;
+      padding: 0px;
+      font-style: italic;
+      font-size: 14px;
+    }
+  }
+}

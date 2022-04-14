@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* убираем scrollbar */
+/* chrome based */
+::-webkit-scrollbar {
+  width: 0px;
+  /* ширина scrollbar'a */
+  background: transparent;
+  /* опционально */
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* WRAPPERS */
+.wrapper {
+  width: 862px;
+  margin: 0 auto;
+}
+
+.page-green {
+  background-color: #007765;
+}
+
+.page-gray {
+  background-color: #eeeeee;
+}
+
+.page-jumbotron {
+  background-image: url(../img/Jumbotron.png);
+  background-size: contain;
+}
+
+.page-hero {
+  background-image: url(../img/Hero.png);
+  background-size: contain;
+}
+
+.page-black-light {
+  background-color: #333333;
+}
+
+/* HEADER */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 65px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo {
+  width: 140px;
+  margin-left: 46px;
+}
+
+/* NAV */
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.nav-item {
+  margin-right: 7.7px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* MAIN */
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*Центрирование по горизонтали*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*Центрирование по вертикали */
+  text-align: center;
+}
+
+.main-title {
+  margin: 122px 0px;
+  color: white;
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.main-description {
+  margin: 98.5px 0px 101px 0px;
+  line-height: 1.19;
+  word-spacing: 1.5px;
+  color: white;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.main-footer {
+  margin: 30px 0px;
+  width: 400px;
+  line-height: 1.19;
+  word-spacing: 2px;
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* PROBLEM */
+.content {
+  word-spacing: 0.1px;
+  padding: 36.5px 0px 42px 0px;
+}
+
+.content-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px;
+  color: #007765;
+  font-size: 49.1px;
+  font-weight: 500;
+}
+
+.content-description {
+  margin-top: 14px;
+  margin-left: 7.5px;
+  margin-bottom: 28px;
+  line-height: 1.2;
+  font-size: 24.4px;
+  font-weight: 400;
+}
+
+.content-description-ital {
+  font-style: italic;
+}
+
+.content-description-bold {
+  font-weight: 700;
+}
+
+.content-image {
+  float: left;
+  width: 88px;
+  margin-top: 13px;
+  margin-left: 7px;
+  margin-right: 37px;
+}
+
+/* GRID CARDS */
+.credit {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+}
+
+.credit-card {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  padding: 0px;
+  word-spacing: 1px;
+}
+
+.credit-card-photo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+}
+
+.credit-card-title {
+  margin: 7px 0px 0px 0px;
+  padding: 0px;
+  color: #007765;
+  font-size: 18px;
+}
+
+.credit-card-description {
+  margin: 0px;
+  padding: 0px;
+  font-style: italic;
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */

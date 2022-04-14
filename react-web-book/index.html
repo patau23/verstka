@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="section-field tab">
+        <div class="cell tablinks" onclick="openThemes(event, 'react')">
+            <div class="block invisible">React</div>
+        </div>
+        <div class="cell tablinks" onclick="openThemes(event, 'official-react-docs')">
+            <div class="block invisible">Official React Docs</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- REACT ROADMAP -->
+    <div class="tabcontent" id="react">
+        <!-- FUNDAMENTAL TOPICS -->
+        <div class="wrapper">
+            <div class="section-field">
+                <div class="cell">
+                    <div class="subsection-field">
+                        <div class="block topic col1to3">Create React App</div>
+                        <div class="block topic col1to3">JSX</div>
+                        <div class="block topic col1to3">Props vs State</div>
+                        <div class="block topic col1to3">Conditional Rendering</div>
+                        <div class="tablesection-field col1to3">
+                            <div class="block topic col1to3 nomargin">Components</div>
+                            <div class="block subtopic nomargin">Functional Components</div>
+                            <div class="block subtopic nomargin">Class Components</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="block section">Fundamental Topics</div>
+                </div>
+                <div class="cell">
+                    <div class="subsection-field">
+                        <div class="block topic col1to3">Component Life Cycle</div>
+                        <div class="block topic col1to3">Lists and Keys</div>
+                        <div class="block topic col1to3 nomargin">Composition and Inheritance</div>
+                        <div class="tablesection-field col1to3">
+                            <div class="block topic col1to3 nomargin">Basic Hooks</div>
+                            <div class="block subtopic nomargin">useState</div>
+                            <div class="block subtopic nomargin">useEffect</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- FUNDAMENTAL TOPICS -->
+        <div class="wrapper">
+            <div class="section-field">
+                <div class="cell">
+                    <div class="subsection-field">
+                        <div class="tablesection-field col1to3">
+                            <div class="block topic col1to3 nomargin">Hooks</div>
+                            <div class="block subtopic">Writing your Own Hooks</div>
+                            <div class="tablesection-field withborder">
+                                <div class="block invisible col1to3 nomargin">Common Hooks</div>
+                                <div class="block subtopic nomargin">useCallback</div>
+                                <div class="block subtopic nomargin">useRef</div>
+                                <div class="block subtopic col1to3 nomargin">useMemo</div>
+                                <div class="block subtopic col1to3 nomargin">useReducer</div>
+                                <div class="block subtopic col1to3 nomargin">useContext</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="block section">Advanced Topics</div>
+                </div>
+                <div class="cell">
+                    <div class="subsection-field">
+                        <div class="block topic col1to3">Render Props</div>
+                        <div class="block topic col1to3">Context</div>
+                        <div class="block topic col1to3">Refs</div>
+                        <div class="block topic col1to3">High Order Components (HOC)</div>
+                        <div class="block topic col1to3">Portals</div>
+                        <div class="block topic col1to3 nomargin">Error Boundaries</div>
+                        <div class="block topic col1to3 nomargin">Fiber Architecture</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- ECOSYSTEM -->
+        <div class="wrapper">
+            <div class="section-field">
+                <div class="cell">
+                    <div class="subsection-field">
+                        <div class="tablesection-field">
+                            <div class="block topic col1to3 nomargin">Routers</div>
+                            <div class="block subtopic nomargin">React Router</div>
+                            <div class="block subtopic nomargin">Reach Router</div>
+                        </div>
+                        <div class="tablesection-field">
+                            <div class="block topic col1to3 nomargin">SSR and SSG</div>
+                            <div class="block subtopic nomargin">Next.js</div>
+                            <div class="block subtopic nomargin">Gatsby</div>
+                        </div>
+                        <div class="tablesection-field col1to3 withborder">
+                            <div class="block topic col1to3 nomargin">API Calls</div>
+                            <div class="block subtopic nomargin">react-query</div>
+                            <div class="block subtopic nomargin">use-http</div>
+                            <div class="tablesection-field withborder">
+                                <div class="block invisible col1to3 nomargin">Graph QL</div>
+                                <div class="block subtopic col1to3 nomargin">Apollo</div>
+                                <div class="block subtopic col1to3 nomargin">Relay Modern</div>
+                            </div>
+                            <div class="tablesection-field withborder">
+                                <div class="block invisible col1to3 nomargin">REST Api Calls</div>
+                                <div class="block subtopic col1to3 nomargin">Axios</div>
+                                <div class="block subtopic col1to3 nomargin">Unfetch</div>
+                                <div class="block subtopic col1to3 nomargin">superagent</div>
+                            </div>
+                        </div>
+                        <div class="tablesection-field">
+                            <div class="block topic col1to3">Mobile</div>
+                            <div class="block subtopic col1to3">React Native</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="block section">Ecosystem</div>
+                </div>
+                <div class="cell">
+                    <div class="subsection-field">
+                        <div class="tablesection-field ">
+                            <div class="block topic col1to3">Forms</div>
+                            <div class="block subtopic col1to3 nomargin">React hook form</div>
+                            <div class="block subtopic col1to3 nomargin">Final Form</div>
+                            <div class="block subtopic col1to3 nomargin">Formik</div>
+                        </div>
+                        <div class="tablesection-field">
+                            <div class="block topic col1to3">Testing</div>
+                            <div class="block subtopic col1to3 nomargin">Jest</div>
+                            <div class="block subtopic col1to3 nomargin">React testing library</div>
+                            <div class="block subtopic col1to3 nomargin">Cypress</div>
+                        </div>
+                        <div class="tablesection-field">
+                            <div class="block topic col1to3">State Managment</div>
+                            <div class="block subtopic col1to3 nomargin">Context / State</div>
+                            <div class="block subtopic col1to3 nomargin">Redux</div>
+                            <div class="block subtopic col1to3 nomargin">Mobx</div>
+                        </div>
+                        <div class="tablesection-field ">
+                            <div class="block topic col1to3">Styling</div>
+                            <div class="block subtopic col1to3 nomargin">Chakra UI</div>
+                            <div class="block subtopic col1to3 nomargin">Material UI</div>
+                            <div class="block subtopic col1to3 nomargin">Ant Design</div>
+                            <div class="block subtopic col1to3 nomargin">Styled Components</div>
+                            <div class="block subtopic col1to3 nomargin">Emotion</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- REACT DOCS -->
+    <div class="tabcontent" id="official-react-docs">
+
+    </div>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
