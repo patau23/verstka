@@ -1,0 +1,67 @@
+@import "normalize.scss";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap);
+
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: #252b42;
+  font-family: Montserrat;
+}
+// Обертка-------------------------------------------------------------------------
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+// -------------------------------------------------------------------------
+._container {
+  max-width: 1046px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  box-sizing: content-box;
+}
+// ШАПКА-------------------------------------------------------------------------
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  &__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+  }
+  &__logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: inherit;
+  }
+  &__menu {
+    margin: 0px 0px 0px 133px;
+    @media (max-width: 992px) {
+      margin: 0px 0px 0px 80px;
+    }
+    @media (max-width: 767px) {
+      margin: 0px 0px 0px 50px;
+    }
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin: 0px 21px 0px 0px;
+    }
+  }
+
+  &__link {
+    color: #737373;
+    line-height: 171%;
+  }
+}
